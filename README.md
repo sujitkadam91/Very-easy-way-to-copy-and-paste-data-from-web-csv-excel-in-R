@@ -1,14 +1,19 @@
 ### Very-easy-way-to-copy-and-paste-data-from-web-csv-excel-in-R
 Very easy way to copy and paste data from web, csv, excel file by using (datapasta) and (reprex) packages in R 
+
 ##Subscribe this YouTube Channel Data/Fun
-############## Subscribe this YouTube Channel Data/Fun  ####################################################
+
+
 
 install.packages(datapasta)
 install.packages(reprex)
 library(datapasta)
 library(reprex)
-############## Subscribe this YouTube Channel Data/Fun  ####################################################
+
+
+
 ##From CSV/Excel
+
 data_set<- tibble::tribble(
   ~Retailer.country, ~Order.method.type,  ~Retailer.type,       ~Product.line,   ~Product.type,                    ~Product, ~Year,  ~Quarter,  ~Revenue, ~Quantity, ~Gross.margin,
     "United States",              "Fax", "Outdoors Shop", "Camping Equipment",  "Cooking Gear", "TrailChef Deluxe Cook Set", 2012L, "Q1 2012",  59628.66,      489L,    0.34754797,
@@ -23,9 +28,12 @@ data_set<- tibble::tribble(
     "United States",              "Fax", "Outdoors Shop", "Camping Equipment",      "Lanterns",           "EverGlow Single", 2012L, "Q1 2012",   19396.5,      579L,    0.46149254
   )
 
+
 data_set
+
 sum(data_set$Revenue)
-############## Subscribe this YouTube Channel Data/Fun  ####################################################
+
+
 ##From websitw
 
 movie_data<- tibble::tribble(
@@ -47,15 +55,13 @@ movie_data<- tibble::tribble(
   15L,          "Dr. Seuss' The Grinch (2018)", "Uni.", "$145,471,250",  4141,  "$67,572,855",  4141,  "11/9",     "-"
   )
 
-############## Subscribe this YouTube Channel Data/Fun  ####################################################
-
 movie_data
 
 Data_names <-c("Rank",	"Movie Title","Studio","Total Gross","Total Gross/Theaters","Opening","Opening/Theaters","Open","Close")
 
 colnames(movie_data)<-Data_names ## for changing col names
+
+
 movie_data
 
-
-############## Subscribe this YouTube Channel Data/Fun  ####################################################
 ##Subscribe this YouTube Channel Data/Fun
