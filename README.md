@@ -1,7 +1,7 @@
 ### Very-easy-way-to-copy-and-paste-data-from-web-csv-excel-in-R
 Very easy way to copy and paste data from web, csv, excel file by using (datapasta) and (reprex) packages in R 
 
-##Subscribe this YouTube Channel Data/Fun
+#Subscribe this YouTube Channel Data/Fun
 
 
 
@@ -12,7 +12,7 @@ library(reprex)
 
 
 
-##From CSV/Excel
+#From CSV/Excel
 
 data_set<- tibble::tribble(
   ~Retailer.country, ~Order.method.type,  ~Retailer.type,       ~Product.line,   ~Product.type,                    ~Product, ~Year,  ~Quarter,  ~Revenue, ~Quantity, ~Gross.margin,
@@ -34,7 +34,7 @@ data_set
 sum(data_set$Revenue)
 
 
-##From websitw
+#From website
 
 movie_data<- tibble::tribble(
   ~V1,                                     ~V2,    ~V3,            ~V4,   ~V5,            ~V6,   ~V7,     ~V8,     ~V9,
@@ -64,4 +64,4 @@ colnames(movie_data)<-Data_names ## for changing col names
 
 movie_data
 
-##Subscribe this YouTube Channel Data/Fun
+#Subscribe this YouTube Channel Data/Fun
