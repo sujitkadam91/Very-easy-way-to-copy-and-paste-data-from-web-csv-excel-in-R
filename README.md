@@ -6,8 +6,11 @@ Very easy way to copy and paste data from web, csv, excel file by using (datapas
 
 
 install.packages(datapasta)
+
 install.packages(reprex)
+
 library(datapasta)
+
 library(reprex)
 
 
